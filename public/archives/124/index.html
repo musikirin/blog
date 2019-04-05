@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>Zurb Foundation 6 を使うとサイト構築がとっても楽ちん - たのしい！！わんわん動植物園</title>
+    
+    <meta name="description" content="※ 当記事はFoundation 6.2時代に書かれたものです。現在のバージョンではXY-Gridが導入され、そちらを使用することが推奨されます。
+
+本記事はZurb Foundation 6についての解説書です。
+
+筆者はCSSフレームワークを触ったことがない状態から1年間Foundation 6を試行錯誤している状態です。まだ使いこなせていない機能が幾つかありますが、Foundationは作業効率を上げるのに十分な力を持っているフレームワークです。">
+    <meta name="author" content="master">
+    
+    <link href="http://musikirin.com/css/github-gist.min.css" rel="stylesheet">
+    <link href="http://musikirin.com/css/style.css" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="http://musikirin.com/img/apple-touch-icon.png">
+    <link rel="icon" href="http://musikirin.com/img/favicon.ico">
+    
+    <meta name="generator" content="Hugo 0.54.0" />
+    
+    <link rel="alternate" type="application/atom+xml" href="http://musikirin.com/index.xml" title="たのしい！！わんわん動植物園">
+    
+    
+  </head>
+  <body class="single">
+    <header class="header">
+      <div class="wrap">
+        
+        <p class="logo"><a href="http://musikirin.com/">たのしい！！わんわん動植物園 </a></p>
+        
+        <button class="menu-toggle" type="button"></button>
+      </div>
+    </header>
+    <nav class="nav">
+    <ul class="menu">
+      
+      
+    </ul>
+    </nav>
+    <main class="main">
+
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">Zurb Foundation 6 を使うとサイト構築がとっても楽ちん</h1>
+    <div class="post-meta">master · 2017.2.3</div>
+  </header>
+  <div class="post-content"><p>※ 当記事はFoundation 6.2時代に書かれたものです。現在のバージョンではXY-Gridが導入され、そちらを使用することが推奨されます。</p>
+
+<p>本記事は<strong>Zurb Foundation 6</strong>についての解説書です。</p>
+
+<p>筆者はCSSフレームワークを触ったことがない状態から1年間Foundation 6を試行錯誤している状態です。まだ使いこなせていない機能が幾つかありますが、Foundationは作業効率を上げるのに十分な力を持っているフレームワークです。</p>
+
+<p>既存WebサイトにFoundationが使用され困っている人や、Foundationを使用して制作をする人に活用していただけば幸いです。</p>
+
+<p>本記事ではCSSフレームワークについては簡単な説明をしますが、Foundationはバックエンドのフレームワークに比べて簡単なため、Foundation 6の主な記法と、メリットが大きい機能を中心に解説します。</p>
+
+<p>Foundationは日本語の情報こそ少ないですが、公式ドキュメントが充実しており、英語が読めなくてもビジュアルでなんとなく分かるので、実際に使う際には必ず公式ドキュメントを参照してください。</p>
+
+<p><a href="#">Foundation for Site 6 Docs</a>(<a href="http://foundation.zurb.com/sites/docs/)[^1][1">http://foundation.zurb.com/sites/docs/)[^1][1</a>]</p>
+
+<p><sup class="footnote-ref" id="fnref:-"><a href="#fn:-">1</a></sup><a href="#">1</a>: Foundation は Email用のHTMLテンプレートもありますが、通常はSiteを使用します。</p>
+
+<h1 id="cssフレームワーク">CSSフレームワーク</h1>
+
+<p>CSSフレームワークという言葉を聞いたことはあるでしょうか。</p>
+
+<p>恐らくWEB制作経験者であれば、Normalize.cssやReset.cssなどのノーマライザーを使用したことがあると思います。これらもCSSフレームワークの1つです。</p>
+
+<p>しかし、FoundationやBootstrapはそれらの機能を拡張し、便利なCSS定義の集合体となっています。</p>
+
+<p>どういうことでしょうか。</p>
+
+<p>実際にFoundationでの例を示します。</p>
+
+<pre><code>// Flex-Gridを使用
+// Foundation、Bootstrap共に、コンテンツの横幅を12分割し、占拠するグリッド数を指定します。
+&lt;div class=&quot;row align-middle&quot;&gt;
+&lt;div class=&quot;small-12 medium-6 large-expand column&quot;&gt;BOX1&lt;/div&gt;
+&lt;div class=&quot;small-12 medium-6 large-expand column text-center&quot;&gt;中央寄せのBOX2&lt;/div&gt;
+&lt;div class=&quot;small-12 large-expand column&quot;&gt;BOX3&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>Foundationを読み込めば、上の書き方をするだけで</p>
+
+<ul>
+<li>スマートフォン（small）ではBOXが縦並び</li>
+<li>タブレットで（medium）ではBOX1とBOX2が横並び、BOX3はその下へ</li>
+<li>パソコン（large）では横並びに</li>
+<li>真ん中のBOX2の文字は中央寄せに</li>
+<li>要素の高さが異なる場合は上下中央寄せ</li>
+</ul>
+
+<p>の条件を満たすことができます。</p>
+
+<p>これをSassまたはCSSで記述すると結構大変ですよね。</p>
+
+<p>これはあくまでFoundationの最も基本な機能です。</p>
+
+<p>この他にも沢山のことがHTMLへマークアップするだけで実装することができます。<sup class="footnote-ref" id="fnref:http-foundation-zurb-com-templates-html"><a href="#fn:http-foundation-zurb-com-templates-html">2</a></sup><a href="#">1</a></p>
+
+<p><sup class="footnote-ref" id="fnref:http-foundation-zurb-com-templates-html"><a href="#fn:http-foundation-zurb-com-templates-html">2</a></sup><a href="#">1</a>: <a href="http://foundation.zurb.com/templates.html">FoundationのHTMLテンプレート</a>から構築例を見ることができます。これらはFoundationの導入をすればHTMLのみで実現できます。</p>
+
+<p>以下はCSSフレームワークを導入して感じたことです。</p>
+
+<ul>
+<li>HTML編集の際に、CSSの編集へと行ったり来たりする回数が減る。</li>
+<li>HTMLを見ればどのようなCSSが定義されているかひと目で分かる。</li>
+<li>CSSファイルを再利用すれば、同じ条件で他案件を制作できる。</li>
+<li>ベンダープレフィクスなどの面倒な記述を隠蔽してくれる。</li>
+<li>Foundationを理解していれば共通の単語でコミュニケーションを取ることができ、保守やレビュー、指示が楽になる。</li>
+</ul>
+
+<p>それぞれの理由は地味ですが、実際に使ってみれば効果が実感できるはずです。</p>
+
+<p>さあ、Foundationを使ってみましょう。</p>
+
+<h1 id="zurb-foundation">Zurb Foundation</h1>
+
+<p>CSSフレームワークという言葉を聞いたことはあるでしょうか。</p>
+
+<p>Web制作を経験したことのある方は、Bootstrapなら知っているかもしれませんね。</p>
+
+<p>いわゆるリキッドレイアウト（デバイスの横幅に応じた表示切り替え）を簡単に作ることができます。</p>
+
+<h2 id="なぜfoundationなのか">なぜFoundationなのか</h2>
+
+<p>Boostrapは普及しすぎました。いかにもBootstrapっぽいデザインを回避するにはフレームワークへの改造が必要になります。</p>
+
+<p>Foundationは日本ではマイナーなため、Bootstrapっぽい見た目を回避できます。</p>
+
+<p>また、Javascriptによる便利なツールがいくつか用意されています。</p>
+
+<p><sup class="footnote-ref" id="fnref:http-foundation-zurb-com-templates-html"><a href="#fn:http-foundation-zurb-com-templates-html">2</a></sup><a href="#">1</a>: Bootstrap3になってからBootstrapにも便利な機能が増えているようです。チェックはしていませんが…</p>
+
+<ul>
+<li>横並びのパネルの要素の高さを揃える</li>
+<li>アコーディオンメニューの作成</li>
+</ul>
+
+<p>など、顧客からの「言うのは簡単だけど実装するには時間がかかる」要望に対応し易いこともお勧めポイントです。</p>
+
+<h2 id="どうやって導入するの">どうやって導入するの？</h2>
+
+<p>Zurb Foundation公式ページに行くと、ダウンロード項目が4つあり悩んでしまいます。</p>
+
+<p>しかし、大抵必要なのは「Custom」と「Sass」だけです。</p>
+
+<p>実際の使い方は公式や他の紹介記事に譲りますが、大きな違いがありますので簡単に紹介します。</p>
+
+<p>もしWordPressでFoundationを使用する場合は、JointsWPという便利なテーマがありますので、そちらを使いましょう。</p>
+
+<h3 id="sassバージョン">Sassバージョン</h3>
+
+<p>出来る限りSass使いましょう。CSSをそのまま触る時代は過ぎてます。</p>
+
+<p>製作中に主要カラーの変更、コンテンツ幅の変更などのFoundationのセッティングを自由自在に行なえます。</p>
+
+<p>特にSassバージョンでしかできない機能として<strong>ブレイクポイントの調整</strong>があります。</p>
+
+<p>通常、small、medium、largeの3種類のブレイクポイントがありますが、「xlargeを追加して其々のブレイクポイントを変える」と言った小技を使用できるようになります。</p>
+
+<p>その他にもSassバージョンの基礎となる<em>settings.scssで大抵のことは設定できるので、Sassバージョンを導入したらぜひ一度目を通しましょう。</em></p>
+
+<p>Sassを知っている人なら公式ドキュメントでわかると思います。</p>
+
+<p><a href="#">Install SCSS Version</a>(<a href="http://foundation.zurb.com/sites/docs/sass.html">http://foundation.zurb.com/sites/docs/sass.html</a>)</p>
+
+<p>Sassを知らない人はココで説明しきれないくらい説明しないといけないので、</p>
+
+<ul>
+<li>SassまたはScss</li>
+<li>タスクランナー</li>
+</ul>
+
+<p>について調べてください。</p>
+
+<p>Sassを導入したくない人やスマホ対応などのスクラッチでない案件の場合は次へどうぞ</p>
+
+<h3 id="cssバージョン">CSSバージョン</h3>
+
+<p>「Custom」は自分で指定できる「Complete」だと思えば大丈夫です。</p>
+
+<p>色々な設定項目がありますが、最初に触るのは枠だけで十分です。</p>
+
+<p>それぞれの項目について解説してからCustomのメリットを纏めていきます。</p>
+
+<h4 id="grid">Grid</h4>
+
+<p>カラム落ちやグリッドシステムの手法を選びます。</p>
+
+<ul>
+<li><code>float: left</code>によるグリッド</li>
+<li><code>display: flex</code>によるグリッド</li>
+<li>No Gridは無視</li>
+</ul>
+
+<p><code>display: flex</code>でWeb制作をしたことがあることなら察しが付くかもしれません。</p>
+
+<p><strong>Flex GridはIE9に対応しません</strong></p>
+
+<p>とっても大事なので2回書きます。</p>
+
+<p><strong>Flex GridはIE9に対応しません</strong></p>
+
+<p>ですので、選択は</p>
+
+<ul>
+<li>モダンブラウザ対応のみならFlex Grid</li>
+<li>IE9などのレガシーに対応するならGrid</li>
+</ul>
+
+<p>だけです。可能な限りFlex Gridがおすすめです。</p>
+
+<p>選択肢によって使えるクラスが変わりますので、仕様を確認して選択しましょう。</p>
+
+<p><strong>経験上後から変更する作業は、1から対応するより楽ですが、結構大変です。</strong></p>
+
+<h4 id="set-your-defaults">Set Your Defaults</h4>
+
+<p>タイトルどおり、ここでレイアウトや色の設定を行えます。</p>
+
+<h5 id="the-grid">The Grid</h5>
+
+<p>単位の<code>rem</code>はCSS3から使用されているルートの文字サイズを基準とする単位です。<sup class="footnote-ref" id="fnref:http-foundation-zurb-com-sites-docs-kitchen-sink-html-accordion"><a href="#fn:http-foundation-zurb-com-sites-docs-kitchen-sink-html-accordion">3</a></sup><a href="#">1</a></p>
+
+<p><sup class="footnote-ref" id="fnref:http-foundation-zurb-com-sites-docs-kitchen-sink-html-accordion"><a href="#fn:http-foundation-zurb-com-sites-docs-kitchen-sink-html-accordion">3</a></sup><a href="#">1</a>: remはあくまで文字の縦幅（フォントサイズ）が基準です。<strong>5remは5文字の幅でない</strong>ことに注意</p>
+
+<p>Foundationの初期フォントサイズは16pxですので、デフォルトでは</p>
+
+<ul>
+<li>全体幅 62.5文字 = 1000px</li>
+<li>カラム同士の余白（ガター） = 30px</li>
+</ul>
+
+<p>となっています。</p>
+
+<p>サイドバーが必要なサイトでは1200pxまで上げることもありますし、</p>
+
+<p>サイドバーがないLPサイトの場合は960pxでも十分です。</p>
+
+<p>仕様に合わせて変更しましょう！</p>
+
+<h5 id="colors">Colors</h5>
+
+<p>Customを使う理由はこの色設定にあります。</p>
+
+<p>まずは<a href="http://foundation.zurb.com/sites/docs/kitchen-sink.html#accordion">Kitchen Sink</a>をご覧ください。</p>
+
+<p>ここに「青」「灰」「緑」「黄」「赤」の各色が少しずつ出てきますが、</p>
+
+<p><strong>初期設定ではその色になります！ポップすぎます！</strong></p>
+
+<p>これでは楽しいWebサイト以外では使いづらいため、ここで色設定をする。というわけです。</p>
+
+<p>補足ですが、Primary Colorは初期設定のボタンやリンク色など随所で使用されますので慎重に選びましょう。他の色は指定しない限り使用されません。</p>
+
+<h4 id="他の設定は">他の設定は？</h4>
+
+<p>それぞれの機能をオンオフできます。</p>
+
+<p><a href="http://foundation.zurb.com/sites/docs/kitchen-sink.html#accordion">Kitchen Sink</a>を見て、使わないな〜と思う機能があればチェックを外すだけでOKです。</p>
+
+<p>機能をオフにすればライブラリが軽量になりますが、案外使う機能があるため慣れるまでは下記の手順を踏むとよいでしょう。</p>
+
+<ol>
+<li>最初は全機能導入して制作</li>
+<li>Foundationファイルをいじっていない &amp; 使用していない機能が多かったら、不要な機能を排除したCustomで差し替え</li>
+</ol>
+
+<h4 id="導入">導入</h4>
+
+<p>あとはダウンロードしてインポートするだけです。</p>
+
+<p>方法は一般的なjsファイルやcssファイルと変わりません。</p>
+
+<h3 id="completeは使わないの">Completeは使わないの？</h3>
+
+<p>なぜZurb一押しの「Complete」を使わないのか。それは上記の色の変更機能が提供されていないから。です。</p>
+
+<p>Sassバージョンを見ればわかりますが、随所で<code>color: primary-color;</code>の指定が見られ、手で書き直すのが大変です。私の場合、Completeを使うのは以下の条件です。</p>
+
+<ul>
+<li>Foundationの初期配色で問題ない場合</li>
+<li>既存サイトにFoundationを埋め込むため色設定を使用しない</li>
+</ul>
+
+<p>それでもGridの幅設定は少々面倒なので、できるだけCustomの使用をおすすめします。</p>
+
+<h3 id="wordpressテーマ-jointswp">WordPressテーマ「JointsWP」</h3>
+
+<p>有志が制作したWordPress用のFoundationブランクテーマです。</p>
+
+<p>SassバージョンにはGulpfileが同梱されており、Node + Gulpでのコンパイル環境が整っていればすぐに開発をスタートできます。また、WordPress独自のClass（<code>.page-title</code>など）も定義されているので、書き換えが簡単です。</p>
+
+<h4 id="ヘッダーパーツについて">ヘッダーパーツについて</h4>
+
+<p><strong>テーマフォルダの /parts 内に複数種類のヘッダーファイルが用意されています。</strong></p>
+
+<ul>
+<li><code>&lt;?php get_template_part( 'parts/nav', 'offcanvas' ); ?&gt;</code> → Off-canvasを利用したメニューです。</li>
+<li><code>&lt;?php get_template_part( 'parts/nav', 'title-bar' ); ?&gt;</code> → シンプルなタイトルバーです。</li>
+</ul>
+
+<p>のようにheader.phpの呼び出しファイルを書き換えるだけで、好きなヘッダーレイアウトを簡単に採用することができます。</p>
+
+<p><a href="http://jointswp.com/">JointsWP</a></p>
+
+<h2 id="どうやって使うの">どうやって使うの？</h2>
+
+<p>先程も出てきましたが、Foundationの機能は<a href="http://foundation.zurb.com/sites/docs/kitchen-sink.html#accordion">Kitchen Sink</a>にまとまっています。それでも機能がとっても多いので、重要な機能を説明していきます。</p>
+
+<h3 id="grid-flexではない">Grid（Flexではない）</h3>
+
+<p>最初の説明にも出てきたGridです。</p>
+
+<p>これはFoundationのコア機能であり、通常のGridとFlex Gridで仕様が異なるため、重点的に解説します。</p>
+
+<p><a href="http://foundation.zurb.com/sites/docs/grid.html">Grid</a> ページを見てください。</p>
+
+<p>Gridの大事な機能は以下の点です。</p>
+
+<ul>
+<li>合計値が12を超える場合はカラム落ちする</li>
+<li>ネストは何回層でも可能</li>
+<li>ブレイクポイントによってカラム幅を変えられる</li>
+<li>ブレイクポイントの指定がない場合、<strong>ブレイクポイントが小さい方の指定が適用される</strong></li>
+<li><code>expanded</code>でブラウザ幅へ拡張可能</li>
+<li><strong><code>column</code>にサイズ指定がない場合は<code>small-12</code>と同じになる</strong></li>
+<li>カラムの中央寄せが可能</li>
+<li>カラム同士の余白を消すことが可能</li>
+<li>順番の入れ替えは<code>[size]-push-*</code>または<code>[size]-pull-*</code>を併用</li>
+</ul>
+
+<p>以下はコード例です。</p>
+
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;small-6 large-4 column&quot;&gt;A&lt;/div&gt;
+&lt;div class=&quot;small-6 large-4 column&quot;&gt;B&lt;/div&gt;
+&lt;div class=&quot;small-12 large-4 column&quot;&gt;C&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<h3 id="flex-grid">Flex Grid</h3>
+
+<p>Flex GridはGridを拡張したものです。</p>
+
+<p><a href="http://foundation.zurb.com/sites/docs/flex-grid.html">Flex Grid</a>こちらを見てください。</p>
+
+<p>基本的な機能はGridと同じですが、同じ記法が使えない点があります。</p>
+
+<ul>
+<li>順番の入れ替えは<code>[size]-order-*</code>で指定</li>
+<li><strong><code>column</code>にサイズ指定がない場合は自動的に<code>small-expand</code>と同じになる</strong></li>
+</ul>
+
+<p>順番の入れ替え指定と、classに<code>column</code>しか指定がない場合の挙動が変わるため注意してください。</p>
+
+<p>以下はGridから拡張機能として使用できます。</p>
+
+<ul>
+<li><code>row</code>に<code>align-middle</code>と指定すると<strong>カラムが上下中央寄せになる</strong></li>
+<li><code>row</code>に<code>align-justify</code>や<code>align-spaced</code>などの<code>justify-content: ***</code>に相当するプロパティを指定できる</li>
+<li><code>[size]-expand</code>の指定で、<strong>余った幅を自動で埋めることができる。</strong>（expand同士は等分割され、グリッドは無視される）</li>
+<li><code>column</code>に<code>shrink</code>を指定すると、カラムがコンテンツに合わせた最小幅となる（グリッドは無視される）</li>
+</ul>
+
+<p>先程のコード例をFlex Gridで書くとこうなります。</p>
+
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;column&quot;&gt;A&lt;/div&gt;
+&lt;div class=&quot;column&quot;&gt;B&lt;/div&gt;
+&lt;div class=&quot;small-12 large-expand column&quot;&gt;C&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>コード量が減っているのがわかると思います。</p>
+
+<p><strong>カラムは大抵等分割</strong>なので、<code>column</code>だけの指定で事足りることが多いのです。</p>
+
+<h3 id="visibility-classes">Visibility Classes</h3>
+
+<p>ブレイクポイントによっての表示、非表示を指定できます。<strong>頻繁に使用します。</strong></p>
+
+<pre><code>&lt;div class=&quot;hide-for-large&quot;&gt;&lt;/div&gt;
+</code></pre>
+
+<p>これだけでパソコン表示時は要素が<code>display: none;</code>になります。</p>
+
+<h3 id="callout">Callout</h3>
+
+<p>ただのボックスですが、<code>padding</code>などが度整形されているため、ちょっとした注意書きに重宝します。</p>
+
+<p>デフォルトでは<code>callout warning</code>とすれば<code>warning</code>を薄くした色が背景に適用されます。</p>
+
+<p>CSSをオーバーライドして使うことが多いです。</p>
+
+<h3 id="button">Button</h3>
+
+<p>Classに<code>button</code>とつけることでフラットなボタンになります。</p>
+
+<p><code>button warning large</code>、<code>button secondary small</code>など、色やサイズを変更できます。</p>
+
+<h3 id="equalizer">Equalizer</h3>
+
+<p>Foundationを使う理由の1つです。</p>
+
+<p>例のようにCalloutを並べる際に「ボックスの高さを揃えたい！」という要望を叶える優れものです。</p>
+
+<pre><code>&lt;!-- row に data-equalizer --&gt;
+&lt;div class=&quot;row&quot; data-equalizer data-equalize-on=&quot;medium&quot; id=&quot;test-eq&quot;&gt;
+  &lt;div class=&quot;columns&quot;&gt;
+&lt;!-- 揃えたい要素に data-equalizer-watch --&gt;
+&lt;div class=&quot;callout&quot; data-equalizer-watch&gt;A&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;columns&quot;&gt;
+&lt;div class=&quot;callout&quot; data-equalizer-watch&gt;B&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;columns&quot;&gt;
+&lt;div class=&quot;callout&quot; data-equalizer-watch&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>基本的な機能は↑だけで実装できます。</p>
+
+<h3 id="off-canvas">Off-canvas</h3>
+
+<p>スマートフォンで「メニューを開くをタップすると画面毎横に移動するメニュー」を簡単に実装できます。</p>
+
+<p><a href="http://foundation.zurb.com/templates-previews-sites-f6/portfolio.html">Site Demo</a> このテンプレートで画面幅を狭くすると実際の動きを見ることができます。</p>
+
+<p>高機能に見えるので、単価アップを狙えるかも。</p>
+
+<h3 id="sticky">Sticky</h3>
+
+<p>「スクロールをしても画面上部で固定されて付いてくるサイドバー」を実装できます。</p>
+
+<h3 id="tabs">Tabs</h3>
+
+<p>クリックで表示内容を切り替える「タブ」を実装できます。</p>
+
+<h3 id="toggler">Toggler</h3>
+
+<p>「クリックをすると、指定したDOMに対しClassのAppend、Removeをする」というJavascriptの動作を簡単に実装できます。</p>
+
+<h3 id="accordion">Accordion</h3>
+
+<p>「親リストをクリックすると、子リストが開く」というアコーディオンメニューを実装できます。</p>
+
+<h3 id="interchange">Interchange</h3>
+
+<p>画面サイズによって表示する画像を切り替えます。</p>
+
+<p>残念ながらRetinaと併用できないので、使用場所は限られます。</p>
+
+<p>他にも沢山ありますが、残りの殆どはPHPやJavascriptアプリケーションに組み合わせると有効なものが多いです。</p>
+
+<hr />
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:-"> <a class="footnote-return" href="#fnref:-"><sup>[return]</sup></a></li>
+<li id="fn:http-foundation-zurb-com-templates-html"> <a class="footnote-return" href="#fnref:http-foundation-zurb-com-templates-html"><sup>[return]</sup></a></li>
+<li id="fn:http-foundation-zurb-com-sites-docs-kitchen-sink-html-accordion"> <a class="footnote-return" href="#fnref:http-foundation-zurb-com-sites-docs-kitchen-sink-html-accordion"><sup>[return]</sup></a></li>
+</ol>
+</div></div>
+  <footer class="post-footer">
+    
+    <ul class="post-tags">
+      
+      <li><a href="http://musikirin.com/tags/foundation/">Foundation</a></li>
+      
+    </ul>
+    
+  </footer>
+  
+  
+  
+  
+</article>
+
+</main>
+<footer class="footer">
+  <span>&copy; 2019 たのしい！！わんわん動植物園</span>
+  <span>&middot;</span>
+  <span>Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo️️</a>️</span>
+  <span>&middot;</span>
+  <span><a href="https://github.com/nanxiaobei/hugo-paper" rel="noopener" target="_blank">Paper 3.0</a>️</span>
+</footer>
+<script src="http://musikirin.c../instantclick.min.js" data-no-instant></script>
+<script data-no-instant>InstantClick.init();</script>
+<script src="http://musikirin.c../highlight.min.js" data-no-instant></script>
+<script data-no-instant>
+  hljs.initHighlightingOnLoad();
+  setMenuListener();
+
+  InstantClick.on('change', function() {
+    document.querySelectorAll('pre code').forEach((block) => {
+      hljs.highlightBlock(block);
+    });
+    setMenuListener();
+  });
+
+  function setMenuListener() {
+    var menuToggle = document.querySelector('.menu-toggle');
+    var body = document.querySelector('body');
+    menuToggle.addEventListener('click', function() {
+      body.classList.toggle('no-scroll');
+    }, false);
+  }
+</script>
+</body>
+</html>
+

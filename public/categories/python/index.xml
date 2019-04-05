@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on たのしい！！わんわん動植物園</title>
+    <link>http://musikirin.com/categories/python/</link>
+    <description>Recent content in Python on たのしい！！わんわん動植物園</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 20 Dec 2016 05:28:24 +0000</lastBuildDate>
+    
+	<atom:link href="http://musikirin.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows10環境における、Python2.7とPython3.5のインストール</title>
+      <link>http://musikirin.com/archiv../</link>
+      <pubDate>Tue, 20 Dec 2016 05:28:24 +0000</pubDate>
+      
+      <guid>http://musikirin.com/archiv../</guid>
+      <description>&lt;p&gt;PythonからMIDIの読み書きができると聞いて触りたくなりました。&lt;/p&gt;
+
+&lt;p&gt;普段はPython3.5を使っているのですが、PythonでMidiを扱うためのライブラリ「python-midi」と「pretty_midi」がPython3に非対応のため、Python2.7とPython3.5を同居させる必要がでました。&lt;/p&gt;
+
+&lt;p&gt;PythonをWindows環境へインストールするにはAnacondaという統合パッケージが非常に優秀なのですが、果たして2.7と3.5を両方インストールして大丈夫なのでしょうか。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

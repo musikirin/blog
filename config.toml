@@ -1,0 +1,8 @@
+baseURL = "http://musikirin.com/"
+languageCode = "ja"
+title = "たのしい！！わんわん動植物園"
+theme = "hugo-paper"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

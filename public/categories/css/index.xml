@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Css on たのしい！！わんわん動植物園</title>
+    <link>http://musikirin.com/categories/css/</link>
+    <description>Recent content in Css on たのしい！！わんわん動植物園</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 03 Feb 2017 03:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://musikirin.com/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zurb Foundation 6 を使うとサイト構築がとっても楽ちん</title>
+      <link>http://musikirin.com/archives/124/</link>
+      <pubDate>Fri, 03 Feb 2017 03:00:00 +0000</pubDate>
+      
+      <guid>http://musikirin.com/archives/124/</guid>
+      <description>&lt;p&gt;※ 当記事はFoundation 6.2時代に書かれたものです。現在のバージョンではXY-Gridが導入され、そちらを使用することが推奨されます。&lt;/p&gt;
+
+&lt;p&gt;本記事は&lt;strong&gt;Zurb Foundation 6&lt;/strong&gt;についての解説書です。&lt;/p&gt;
+
+&lt;p&gt;筆者はCSSフレームワークを触ったことがない状態から1年間Foundation 6を試行錯誤している状態です。まだ使いこなせていない機能が幾つかありますが、Foundationは作業効率を上げるのに十分な力を持っているフレームワークです。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

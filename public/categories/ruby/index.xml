@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on たのしい！！わんわん動植物園</title>
+    <link>http://musikirin.com/categories/ruby/</link>
+    <description>Recent content in Ruby on たのしい！！わんわん動植物園</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 25 Jan 2017 12:36:43 +0000</lastBuildDate>
+    
+	<atom:link href="http://musikirin.com/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Windows10でRuby on Rails開発はつらい</title>
+      <link>http://musikirin.com/archiv../</link>
+      <pubDate>Wed, 25 Jan 2017 12:36:43 +0000</pubDate>
+      
+      <guid>http://musikirin.com/archiv../</guid>
+      <description>最近Ruby on Railsの勉強を始めました。
+Pro Gateという学習サイトで一通り流れをつかみ、Rails TutorialはCloud9で数章進めました。
+そうなってくると、「できるだけ実際の開発環境でRails Tutorialやりたいな！」と思うものです。
+手元にあるのはIntteliJ IDEAとWindows10とMac Book Air 11inch。本当はMacでやりたいけど11inchだから開発にはつらい…
+そこでやむを得ずWindows10へ環境を構築することにしたのですが…
+ RubyInstallerからRubyを入れる Rails 5.0.0.1を入れる Ruby 2.3系がSQLiteと相性が悪いらしく、そのまま2.2系を再インストール Ruby切り替えできないじゃん。Rumix入れてみよう  上の流れの間にもHerokuへ git push heroku masterするとgemのバージョン違いでエラーを吐くなど、たくさんの問題が発生しました。
+もう後戻りが出来ないくらい環境が汚染されて来たので、Virtual Boxにelementary OSを入れて環境構築しようかな…
+教訓：WindowsでRuby，Pythonの開発をしようなんてしちゃだめだぞ！  </description>
+    </item>
+    
+  </channel>
+</rss>
