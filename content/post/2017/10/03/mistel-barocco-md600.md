@@ -177,10 +177,8 @@ Barocco MD600は「茶」「赤」「青」「黒」から選べるのですが�
 
 半年前からエルゴノミクスキーボードが樹になり始め、買うと決心してから2週間ほどで購入に至りました。果たして**2万円**はたいて買ったキーボードは快適か否か。次回の記事でレビューします！
 
-<noscript>
-  <iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=musikirin07-22&o=9&p=8&l=as1&asins=B01KN6VEYG&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=musikirin07-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01KN6LBDU&linkId=9dfd4e3cb161e63f214b5fb80273077f"></iframe>
 
  [1]: http://musikirin.com/archives/2017/10/03/mistel-barocco-md600
  [2]: http://musikirin.com/archives/2017/10/07/mistel-barocco-md600-2
- [3]: http://musikirin.com/archives/2017/10/03/mistel-barocco-md600-3
+ [3]: http://musikirin.com/archives/2017/10/30/mistel-barocco-md600-3
