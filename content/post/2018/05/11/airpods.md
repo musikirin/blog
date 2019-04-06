@@ -15,9 +15,7 @@ tags:
 
 最近、完全分離型のワイヤレスイヤホンが欲しくなり、最終的にAppleの**AirPods**を買ったのでレビューします。
 
-<noscript>
-  <iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=musikirin07-22&o=9&p=8&l=as1&asins=B01N2VMGT6&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</noscript>
+<iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=musikirin07-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01N2VMGT6&linkId=6f1a162d2ae776a72d957c262d6616f4"></iframe>
 
 <!--more-->
 
