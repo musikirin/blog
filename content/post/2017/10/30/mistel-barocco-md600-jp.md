@@ -75,6 +75,7 @@ Barocco MD600は矢印キーがなく、無理やり矢印キーに変換する�
 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=musikirin07-22&language=ja_JP&o=9&p=8&l=as4&m=amazon&f=ifr&ref=as_ss_li_til&asins=B01KN6LBDU&linkId=9dfd4e3cb161e63f214b5fb80273077f"></iframe>
 
  [1]: http://musikirin.com/archives/2017/10/03/mistel-barocco-md600
+ [3]: http://musikirin.com/archives/2017/10/30/mistel-barocco-md600-3
  [2]: %E5%A4%89%E6%85%8B%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%20Mistel%20Barocco%20MD600%20%E3%81%AE%E9%85%8D%E7%BD%AE%E3%81%AB%E8%8B%A6%E6%88%A6%E3%81%97%E3%81%9F%E8%A9%B1
  [3]: %E5%A4%89%E6%85%8B%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%20Mistel%20Barocco%20MD600%20%E3%81%AE%E3%82%AD%E3%83%BC%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%97%E3%81%9F%E8%A9%B1
  [4]: http://www.archisite.co.jp/products/mistel/barocco-jp/

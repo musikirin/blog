@@ -4,8 +4,8 @@ type: post
 date: 2016-12-20T05:28:24+00:00
 categories:
   - PROGRAMMING
+tags:
   - Python
-
 ---
 PythonからMIDIの読み書きができると聞いて触りたくなりました。
   

@@ -8,14 +8,14 @@ enclosure:
         http://musikirin.com/wp-content/uploads/20../sym6v1.4.mp3
         13044140
         audio/mpeg
-        
 categories:
-  - Classic
   - MUSIC
-  - Piano MIDI
 tags:
   - Pianoteq
   - Tchaikovsky
+  - DTM
+  - Classic
+  - Piano MIDI
 format: audio
 
 ---

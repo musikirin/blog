@@ -16,7 +16,7 @@ tags:
 
 その名も台湾にある**Mistel**社の**Barocco MD600**。
 
-<a title="MiSTEL BAROCCO MD600 分離式 メカニカルキーボード 英語配列 62キー CHERRY 赤軸 PBTキーキャップ ブラック MD600-RUSPLGAA1" href="https://www.amazon.co.jp/MiSTEL-BAROCCO-%E3%83%A1%E3%82%AB%E3%83%8B%E3%82%AB%E3%83%AB%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-PBT%E3%82%AD%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%83%E3%83%97-MD600-RUSPLGA../B01KN6VEYG?psc=1&SubscriptionId=AKIAJWADTYE3PKY27KHQ&tag=musikirin07-22&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01KN6VEYG" target="_blank" rel="noopener"><img src="https://i2.wp.com/images-fe.ssl-images-amazon.com/images/I/414Zqzpq2LL.jpg?resize=500%2C211&#038;ssl=1" alt="MiSTEL BAROCCO MD600 分離式 メカニカルキーボード 英語配列 62キー CHERRY 赤軸 PBTキーキャップ ブラック MD600-RUSPLGAA1" data-recalc-dims="1../a>
+<a href="https://www.amazon.co.jp/MiSTEL-BAROCCO-%E3%83%A1%E3%82%AB%E3%83%8B%E3%82%AB%E3%83%AB%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89-PBT%E3%82%AD%E3%83%BC%E3%82%AD%E3%83%A3%E3%83%83%E3%83%97-MD600-BUSPLGAA1/dp/B01KN6LBDU/ref=as_li_ss_il?ie=UTF8&linkCode=li3&tag=musikirin07-22&linkId=ecb7e09b76365d0de30efbef0c11a67f&language=ja_JP" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B01KN6LBDU&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=musikirin07-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=musikirin07-22&language=ja_JP&l=li3&o=9&a=B01KN6LBDU" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 
 ### この記事のまとめ
 
