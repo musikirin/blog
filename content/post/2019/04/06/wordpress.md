@@ -9,14 +9,15 @@ tags:
   - Hugo
   - Blog
 ---
-
 ## まとめ
 
 - Wordpressの保守は面倒くさい
 - データベースレス最高
 - Markdown最高
 
-<!-- more -->
+<!--more-->
+
+{{< ad >}}
 
 ## Wordpressは面倒
 

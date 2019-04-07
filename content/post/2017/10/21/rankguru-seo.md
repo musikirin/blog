@@ -18,6 +18,10 @@ Windowsだと**GRC**というツールが有名で、高機能で年5,000円ほ�
 
 何かしらのスクリプトを書くか迷っていたところ、**Mac専用**の**1,000円以内で買いきれる検索順位監視ツール**を見つけたのでご紹介します。
 
+<!-- more -->
+
+{{< ad >}}
+
 <div class="wpal wpal-mac-software">
   <div class="wpal-icon">
     <a href="https://itunes.apple.c../app/rankguru-seo/id662946309?mt=12&uo=4&partnerId=11&at=1000lHzU" target="itune_store"><img src="https://i1.wp.com/is1-ssl.mzstatic.com/image/thumb/Purple1../../dc/ec59dc33-5f10-d314-83d4-03d01d998d03/source/100x100bb.png?w=700&#038;ssl=1" alt="RankGuru SEO" data-recalc-dims="1../a>

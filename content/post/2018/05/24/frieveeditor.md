@@ -15,6 +15,8 @@ tags:
 
 <!--more-->
 
+{{< ad >}}
+
 ![画像](../E8BECF88-7E53-44A3-A3CF-AA3651EEE2EB.jpeg)
 
 
