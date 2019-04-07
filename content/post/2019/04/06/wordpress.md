@@ -1,7 +1,7 @@
 ---
 title: 脱Wordpressした話
 type: post
-date: 2018-04-06T00:16:49+09:00
+date: 2019-04-06T00:16:49+09:00
 categories:
   - WEB
 tags:
@@ -15,6 +15,8 @@ tags:
 - Wordpressの保守は面倒くさい
 - データベースレス最高
 - Markdown最高
+
+<!-- more -->
 
 ## Wordpressは面倒
 
